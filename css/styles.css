@@ -107,6 +107,7 @@ ul {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 .link:hover {
   color: var(--color-brand-normal);
@@ -114,7 +115,11 @@ ul {
 
 /* HEADER */
 .header {
-  background-color: #c2b1b1; /*remove*/
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 32px;
 }
 .header-container {
   display: flex;
@@ -144,7 +149,13 @@ ul {
 }
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-section-background.jpg');
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('../images/hero-section-background.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -271,12 +282,16 @@ ul {
   border: 1px solid lightgrey; /* remove */
   border-radius: 16px;
   padding: 24px;
+  transition: transform 0.3s;
   background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55.21%,
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
+}
+.format-card:hover {
+  transform: scale(1.05);
 }
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
@@ -314,6 +329,9 @@ ul {
 }
 .carousel-arrow {
   fill: var(--color-primary-dark);
+}
+.carousel-arrow.next {
+  transform: rotate(180deg);
 }
 
 /* CONTACTS SECTION */
@@ -410,7 +428,9 @@ ul {
   align-items: center;
   position: fixed;
   inset: 0;
+  padding: 20px 0;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, visibility 0.3s;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -418,11 +438,13 @@ ul {
   pointer-events: none;
 }
 .modal {
-  width: 880px;
-  height: 880px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 880px;
+  max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
-  position: relative;
 }
 
 .modal-btn-close {
