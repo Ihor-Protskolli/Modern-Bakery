@@ -150,12 +150,12 @@
               <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/walrus-format.jpg"
                     alt="Walrus-format"
                   />
-                  <h3 class="format-title" lang="en">Walrus</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Walrus</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 120 м2</p>
                     <p>Меню: розширене меню</p>
                     <p>
@@ -169,12 +169,12 @@
               <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/horseshoe-format.jpg"
                     alt="Horseshoe-format"
                   />
-                  <h3 class="format-title" lang="en">Horseshoe</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Horseshoe</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 120 м2</p>
                     <p>Меню: розширене меню</p>
                     <p>
@@ -188,12 +188,12 @@
               <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/handlebar-format.jpg"
                     alt="Handlebar-format"
                   />
-                  <h3 class="format-title" lang="en">Handlebar</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Handlebar</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 120 м2</p>
                     <p>Меню: розширене меню</p>
                     <p>
@@ -213,21 +213,21 @@
           </div>
         </div>
       </section>
-      <section class="contacts-section" class="section" id="contacts-section">
+      <section class="contact-section" class="section" id="contacts-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h2 class="contacts-title section-title">
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section__title">
                 Приєднуйся до мережі пекарань
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <form name="contact-form" autocomplete="off">
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-name">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">
                     Ім'я
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     id="user-name"
                     type="text"
                     name="user-name"
@@ -235,12 +235,12 @@
                   />
                 </div>
 
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-tel">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">
                     Телефон
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     id="user-tel"
                     name="user-tel"
                     type="tel"
@@ -248,31 +248,31 @@
                   />
                 </div>
 
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-email">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
                     Електронна пошта
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     id="user-email"
                     name="user-email"
                     type="email"
                     placeholder="Електронна пошта"
                   />
                 </div>
-                <button class="form-button button" type="submit">
+                <button class="contact-section__button button" type="submit">
                   Замовити дзвінок
                 </button>
                 <p class="form-terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-terms-link" href="#"
+                  <a class="form-terms__link" href="#"
                     >з політикою конфіденційності</a
                   >
                 </p>
               </form>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.42126817066924!2d30.49088878914364!3d50.45676356363868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1701268540902!5m2!1suk!2sua"
               width="603"
               height="595"
@@ -347,20 +347,21 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <!--remove *is-hidden*-->
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">
+          Close
+        </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <br />
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-name">
               Ім'я
             </label>
             <input
-              class="form-input"
+              class="input__control"
               id="user-name"
               type="text"
               name="user-name"
@@ -369,12 +370,12 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-tel">
               Телефон
             </label>
             <input
-              class="form-input"
+              class="input__control"
               id="user-tel"
               name="user-tel"
               type="tel"
@@ -383,12 +384,12 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-email">
               Електронна пошта
             </label>
             <input
-              class="form-input"
+              class="input__control"
               id="user-email"
               name="user-email"
               type="email"
@@ -396,12 +397,14 @@
               required
             />
           </div>
-          <button class="form-button button" type="submit">
+          <button class="modal__button button" type="submit">
             Замовити дзвінок
           </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#"
+              >з політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
