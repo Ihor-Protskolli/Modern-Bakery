@@ -1,4 +1,12 @@
 .chefs-section {
+  &__list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
   &__title {
     margin: 0 auto 80px;
     position: relative;
@@ -16,14 +24,5 @@
     &::after {
       right: 0;
     }
-  }
-
-  &__list {
-    display: flex;
-    gap: 40px 30px;
-    flex-wrap: wrap;
-  }
-  &__item {
-    flex-basis: calc((100% - 30px) / 2);
   }
 }
