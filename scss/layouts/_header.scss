@@ -19,9 +19,30 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    height: 24px;
+    width: 24px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    fill: var(--color-primary-light);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
