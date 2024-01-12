@@ -1,19 +1,19 @@
 .formats-section {
-  &__container {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
 
+  &__container {
+    overflow: hidden;
+  }
+
   &__list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  &__item {
-    flex-basis: calc((100% - 40px) / 3);
-  }
-  &__title {
-    margin-bottom: 80px;
+    margin-bottom: 32px;
   }
 }
+
+// .swiper-slide {
+//   flex-basis: calc((100% - 40px) / 3);
+// }
