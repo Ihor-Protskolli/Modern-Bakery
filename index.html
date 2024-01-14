@@ -163,8 +163,11 @@
             Формати
           </h2>
           <div class="formats-section__slider">
-            <button class="carousel-button prev" type="button">
-              <svg class="carousel-arrow" width="32" height="32">
+            <button
+              class="formats-section__button carousel-button prev"
+              type="button"
+            >
+              <svg width="32" height="32">
                 <use href="./images/icons.svg#icon-Arrow-left"></use>
               </svg>
             </button>
@@ -292,15 +295,18 @@
                 <span class="pagination__button"></span>
               </div>
             </div>
-            <button class="carousel-button next" type="button">
-              <svg class="carousel-arrow next" width="32" height="32">
+            <button
+              class="formats-section__button carousel-button next"
+              type="button"
+            >
+              <svg width="32" height="32">
                 <use href="./images/icons.svg#icon-Arrow-left"></use>
               </svg>
             </button>
           </div>
         </div>
       </section>
-      <!-- <section class="contact-section" class="section" id="contacts-section">
+      <section class="contact-section" class="section" id="contacts-section">
         <div class="container">
           <div class="contact-section__container">
             <div class="contact-section__form">
@@ -361,79 +367,82 @@
             <iframe
               class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.42126817066924!2d30.49088878914364!3d50.45676356363868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1701268540902!5m2!1suk!2sua"
-              width="603"
-              height="595"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li><a class="link" href="#">Франшиза</a></li>
               <li><a class="link" href="#">Наші традиції</a></li>
               <li><a class="link" href="#">Формати</a></li>
               <li><a class="link" href="#">Контакти</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="address-link" href="tel:+380960000007">
-                  +38 (096) 000 00 07
-                </a>
-              </li>
-              <li>
-                <a class="address-link" href="mailto:shopbakery@gmail.com">
-                  shopbakery@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  class="address-link"
-                  href="https://maps.app.goo.gl/C3jh7zR4RuCbkzdw7"
-                  target="_blank"
-                >
-                  Україна, м.Київ, вул. Січових Стрільців 54
-                </a>
-              </li>
-              <li>
+          <address class="footer__address">
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380960000007">
+                    +38 (096) 000 00 07
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:shopbakery@gmail.com"
+                  >
+                    shopbakery@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://maps.app.goo.gl/C3jh7zR4RuCbkzdw7"
+                    target="_blank"
+                  >
+                    Україна, м.Київ, вул. Січових Стрільців 54
+                  </a>
+                </li>
+              </ul>
+
+              <div>
                 <a href="#">
-                  <svg class="address-icon" width="32" height="32">
+                  <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook-logo"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
+
                 <a href="#">
-                  <svg class="address-icon" width="32" height="32">
+                  <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram-logo"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
-            <div class="address-info">
-              <a class="address-link" href="#" target="_blank">
+              </div>
+            </div>
+
+            <div class="footer__address-info">
+              <a class="footer__address-link" href="#" target="_blank">
                 Політика конфіденційності
               </a>
-              <p class="address-copyright">&copy;2022 Дані захищені</p>
+              <p class="footer__address-copyright">&copy;2022 Дані захищені</p>
             </div>
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
@@ -447,8 +456,14 @@
             <label class="form-label visually-hidden" for="user-name">
               Ім'я
             </label>
-            <input class="input__control" id="user-name" type="text"
-            name="user-name" placeholder="Ім'я" required
+            <input
+              class="input__control"
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Ім'я"
+              required
+            />
           </div>
 
           <div class="modal__form-field input">
