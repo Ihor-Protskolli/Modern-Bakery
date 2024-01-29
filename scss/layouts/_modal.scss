@@ -33,6 +33,16 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  &__btn-close:hover {
+    background-color: var(--color-brand-normal);
+    border-radius: 15px;
+    opacity: 1;
   }
 
   &__form-field {

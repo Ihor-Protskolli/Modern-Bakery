@@ -1,6 +1,7 @@
 .contact-section {
-  padding-bottom: 96px;
-
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
   &__container {
     display: flex;
     gap: 24px;

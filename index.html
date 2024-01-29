@@ -17,7 +17,11 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="/">
-              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+              <img
+                src="./images/logo.svg"
+                alt="Логотип сучасної пекарні"
+                class="header__logo"
+              />
             </a>
             <ul class="header__menu">
               <li>
@@ -38,8 +42,34 @@
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <img src="./images/close-btn.png" />
             </button>
+            <a href="/" class="mobile-menu__logo">
+              <img
+                src="./images/logo-dark.svg"
+                alt="Логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="#traditions-section"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#chefs-section"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contacts-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -446,7 +476,7 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          <img src="./images/close-btn.png" />
         </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
@@ -505,7 +535,6 @@
         </form>
       </div>
     </div>
-    -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
     <script src="./js/modal.js"></script>
