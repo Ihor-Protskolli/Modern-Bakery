@@ -42,14 +42,29 @@
   &__logo {
     margin-bottom: 32px;
   }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   &__link {
-    color: var(--color-primary-dark);
+    color: var(--color-brand-dark);
     font-size: 14px;
     text-decoration: none;
     line-height: 1.5;
+    padding: 10px 10px;
+    font-weight: 400;
+
+    font-size: 1.2em;
 
     &:hover {
       color: var(--color-brand-normal);
+    }
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
     }
   }
 }
