@@ -2,11 +2,14 @@
   @media screen and (min-width: $bp-tablet) {
     padding-bottom: 96px;
   }
+  & p {
+    text-align: center;
+  }
   &__container {
     display: flex;
     gap: 24px;
     flex-direction: column;
-
+    margin: auto 20px 24px 20px;
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       gap: 32px;
@@ -14,12 +17,11 @@
   }
 
   &__title {
-    margin-bottom: 16px;
+    text-align: center;
   }
 
-  &__form-field {
-    margin-bottom: 24px;
-  }
+  // &__form-field {
+  // }
   &__button {
     display: block;
     margin: 0 auto 16px;
